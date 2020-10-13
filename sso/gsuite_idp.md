@@ -50,6 +50,8 @@ BODY:
 
 6. Add Role to Gsuite User Schema
 
+Many AWS Accounts and Permissions can be controlled by adding user schema Roles as below:
+
 ```
 POST https://developers.google.com/admin-sdk/directory/v1/reference/users/patch#try-it
 
@@ -80,3 +82,24 @@ AWS_IAM_IDP_ARN: arn:aws:iam::69695334234624:saml-provider/KarrosGsuiteSSO
 7. Set up the SAML app in Google Apps
 
 > Google Admin console -> Apps -> SAML apps -> New App -> Amazon Web Services
+
+- Set up Google as IdP
+- Next
+- Provide basic information for AWS
+  - Application Name
+  - Description
+  - Logo
+- Provide service provider details
+  - ACS URL (Assertion Consumer Service URL) and Entity ID
+  - Name ID: Basic Information > Primary Email
+- SAML Attribute mapping
+  - https://aws.amazon.com/SAML/Attributes/Role
+    AWSSSO > Role
+  - https://aws.amazon.com/SAML/Attributes/RoleSessionName
+    Basic Information > Primary email
+
+8. Enable App for Everyone or on some organizations
+
+9. Using
+
+Open new tab in browser -> Apps -> Roll down -> Amazon Web Services -> Choose the correct role
