@@ -75,47 +75,47 @@
         "collect_list": [
           {
             "file_path": "/logs/gateway.log",
-            "log_group_name": "athena/dev/gateway",
+            "log_group_name": "/edulog/athena/dev/gateway",
             "timestamp_format": "%d/%b/%Y:%H:%M:%S %z"
           },
           {
             "file_path": "/logs/txnhub.log",
-            "log_group_name": "athena/dev/txnhub",
+            "log_group_name": "/edulog/athena/dev/txnhub",
             "timestamp_format": "%d/%b/%Y:%H:%M:%S %z"
           },
           {
             "file_path": "/logs/routing.log",
-            "log_group_name": "athena/dev/routing",
+            "log_group_name": "/edulog/athena/dev/routing",
             "timestamp_format": "%d/%b/%Y:%H:%M:%S %z"
           },
           {
             "file_path": "/logs/geocode.log",
-            "log_group_name": "athena/dev/geocode",
+            "log_group_name": "/edulog/athena/dev/geocode",
             "timestamp_format": "%d/%b/%Y:%H:%M:%S %z"
           },
           {
             "file_path": "/logs/edta.log",
-            "log_group_name": "athena/dev/edta",
+            "log_group_name": "/edulog/athena/dev/edta",
             "timestamp_format": "%d/%b/%Y:%H:%M:%S %z"
           },
           {
             "file_path": "/logs/reports.log",
-            "log_group_name": "athena/dev/reports",
+            "log_group_name": "/edulog/athena/dev/reports",
             "timestamp_format": "%d/%b/%Y:%H:%M:%S %z"
           },
           {
             "file_path": "/logs/edta.log",
-            "log_group_name": "athena/dev/edta",
+            "log_group_name": "/edulog/athena/dev/edta",
             "timestamp_format": "%d/%b/%Y:%H:%M:%S %z"
           },
           {
             "file_path": "/logs/ivin.log",
-            "log_group_name": "athena/dev/ivin",
+            "log_group_name": "/edulog/athena/dev/ivin",
             "timestamp_format": "%d/%b/%Y:%H:%M:%S %z"
           },
           {
             "file_path": "/logs/aggregator.log",
-            "log_group_name": "athena/dev/aggregator",
+            "log_group_name": "/edulog/athena/dev/aggregator",
             "timestamp_format": "%d/%b/%Y:%H:%M:%S %z"
           }
         ]
