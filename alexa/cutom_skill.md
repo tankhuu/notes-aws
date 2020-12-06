@@ -2,9 +2,10 @@
 
 ## Components of a Custom Skill
 
-- A set of `Intents`: intents represent the core functionality for your skill.
-- A set of `Sample Utterances`: specify the words and phrases users can say to invoke those intents. You map these utterances to your intents. This mapping forms the interaction model for the skill.
+- A set of `Intents`: intents represent the core functionality for your skill. Intents can optionally have arguments called `slots`.
+- A set of `Sample Utterances`: specify the words and phrases users can say to invoke those intents. Map the intents to the words and phrases users can say to interact with your skill.
 - An `invocation name` that identifies the skill. The user includes this name when initiating a conversation with your skill.
+- A dialog model identifies information your skill requires and the prompts Alexa can use to collect and confirm that information in a conversation with the user.
 - If applicable, a set of images, audio files, and video files that you want to include in the skill. These must be stored on a publicly accessible site so that each item is accessible by a unique URL.
 - A `cloud-based service` that accepts these intents as structured requests and then acts upon them. This service must be accessible over the Internet. You provide an endpoint for your service when configuring the skill.
   - Request: IntentRequest
@@ -55,3 +56,5 @@ Interaction ends.
 ```
 
 ## [Understand How Users Invoke Custom Skills](https://developer.amazon.com/en-US/docs/alexa/custom-skills/understanding-how-users-invoke-custom-skills.html)
+
+## [Steps to Build a Custom Skill](https://developer.amazon.com/en-US/docs/alexa/custom-skills/steps-to-build-a-custom-skill.html)

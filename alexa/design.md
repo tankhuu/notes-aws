@@ -54,3 +54,17 @@ For example, if our utterance is: “I want to go snorkeling next Friday in Arub
 That can be broken down into: “I want to go [activity] [date] in [place].”
 
 In this case, your slots would be activities, dates, and places. Many slots can be filled with the built-in library so you don’t have to add everything by hand. This ensures a consistent experience across Alexa.
+
+## Design to Build Your Interaction Model
+
+The interaction model refers to your collection of intents, sample utterances, and the dialog model:
+
+- The requests your skill can handle are represented as intents.
+- Intents can optionally have arguments called slots.
+- Sample utterances map the intents to the words and phrases users can say to interact with your skill.
+- A dialog model identifies information your skill requires and the prompts Alexa can use to collect and confirm that information in a conversation with the user.
+
+There are two different ways to create these components:
+
+- Use the developer console. This provides an updated console for the entire skill-building process, including the interaction model. You can also enter and edit the JSON for the interaction model in the JSON Editor. This is useful for pasting in the JSON provided in sample projects.
+- Create the JSON for the interaction model and create or update your skill with the Skill Management API or the ASK Command Line Interface.
