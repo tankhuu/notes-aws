@@ -24,3 +24,11 @@
 - /other-department/
 - /aws/reference/secretsmanager/secret_ID_in_Secrets_Manager
 - /aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-x86_64-gp2
+
+## Get parameter by path
+
+`aws ssm get-parameters-by-path --path /athena/{tenant}/ --profile aws-devops`
+
+`aws ssm get-parameters-by-path --path /athena/ --profile aws-devops --recursive`
+
+`aws ssm get-parameters-by-path --path /athena/{tenant}/ --profile aws-devops --with-decryption`
