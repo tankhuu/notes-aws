@@ -1,0 +1,3 @@
+# AWS Session Manager
+
+Allow to start ssh / powershel into EC2 Instance with session history, logs, ...
